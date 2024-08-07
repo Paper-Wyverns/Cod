@@ -1,0 +1,25 @@
+body {
+    background-image: url('img/Cod Fish  231220953 -Beige, Blue.jpg');
+    background-size: cover;
+
+    font-family: 'Calibri', sans, seriff;
+    color: white;
+
+    cursor: default ;
+}
+
+.glassmorphism-light-1{
+    width: 95%;
+    height: 175%;
+    margin: 20px;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 10px;
+    z-index: 2;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+h6 {
+    font-size: 100px;
+}
