@@ -1,5 +1,6 @@
 body {
-    background-image: url('img/Cod Fish  231220953 -Beige, Blue.jpg');
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d92018d2-cc4d-4d66-816c-077b700f10cf/d6po4it-7f3e3076-fb7e-4acc-b292-24213edb1307.png/v1/fill/w_1019,h_784,q_70,strp/shadow_lugia_by_emmlin_d6po4it-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Nzg4IiwicGF0aCI6IlwvZlwvZDkyMDE4ZDItY2M0ZC00ZDY2LTgxNmMtMDc3YjcwMGYxMGNmXC9kNnBvNGl0LTdmM2UzMDc2LWZiN2UtNGFjYy1iMjkyLTI0MjEzZWRiMTMwNy5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.nRXHoxd72BHSxiTc0LeWc53W7Yl1gqaCWk-SGioTsIc');
+    background-size: cover;
 
     font-family: 'Calibri', sans, seriff;
     color: white;
@@ -8,8 +9,8 @@ body {
 }
 
 .glassmorphism-light-1{
-    width: 50%;
-    height: 1000px;
+    width: 95%;
+    height: 175%;
     margin: 20px;
     border: 2px solid rgba(255,255,255,0.2);
     border-radius: 10px;
@@ -21,4 +22,108 @@ body {
 
 h6 {
     font-size: 100px;
+}
+
+.buttonStyle {
+    --clr:#FF3131;
+}
+
+button {
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    transition: 0.2s;
+}
+
+button:hover {
+    letter-spacing: 0.2rem;
+    padding: 1.1rem 3.1rem;
+    background: var(--clr);
+    color: var(--clr);
+    /* box-shadow: 0 0 35px var(--clr); */
+    animation: box 3s infinite;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #272822;
+}
+
+button span {
+    position: relative;
+    z-index: 1;
+}
+
+button i {
+    position: absolute;
+    inset: 0;
+    display: block;
+}
+
+button i::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 80%;
+    top: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+}
+
+button:hover i::before {
+    width: 15px;
+    left: 20%;
+    animation: move 3s infinite;
+}
+
+button i::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    left: 20%;
+    bottom: -2px;
+    border: 2px solid var(--clr);
+    background: #272822;
+    transition: 0.2s;
+}
+
+button:hover i::after {
+    width: 15px;
+    left: 80%;
+    animation: move 3s infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes box {
+    0% {
+        box-shadow: #27272c;
+    }
+    50% {
+        box-shadow: 0 0 25px var(--clr);
+    }
+    100% {
+        box-shadow: #27272c;
+    }
 }
